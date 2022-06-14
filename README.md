@@ -11,9 +11,9 @@ DATE | PROGRESS | BLOCKERS | GOALS |
 ----- | ----- | ----- | -----| 
 06/14/2022 | Folder structures created. User & Movie models created. | None | Connect to DB. Create routes and controllers for Movie model. |
 
-## Technologies 
+## Technologies
 
-***
+*** 
 
 1. Express
 2. Mongoose
@@ -21,3 +21,15 @@ DATE | PROGRESS | BLOCKERS | GOALS |
 ## Stretch Goals
 
 ***
+
+- Resume previous video progress
+- Multi-users
+- Different subscription plans
+- Top 10 via location
+- Download content
+- User settings - parental, video
+- Subtitles
+- Skip and Rewind
+- Skip Intro
+- Videos in diff language
+- Share functionality
