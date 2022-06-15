@@ -6,9 +6,14 @@ require('./config/database')
 
 // ===== MIDDLEWARES =====
 app.use(express.json())
+
 // ===== ROUTES =====
 // Movies
-app.use('/api/v1/movies', require('./routes/api/movies.js'))
+app.use('/api/v1/movies', require('./routes/api/movies'))
+// Users
+app.use('/api/v1/users', require('./routes/api/users'))
+// Favorites
+
 
 // ===== PORT =====
 const port = 8080
