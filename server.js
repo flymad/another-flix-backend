@@ -7,11 +7,14 @@ require('./config/database')
 // ===== MIDDLEWARES =====
 app.use(express.json())
 
+// check if token and create req.user
+app.use(require('./config/checkToken'))
 // ===== ROUTES =====
-// Movies
-app.use('/api/v1/movies', require('./routes/api/movies'))
 // Users
 app.use('/api/v1/users', require('./routes/api/users'))
+const ensureloggedin = require('./config/ensureloggedin')
+// Movies
+app.use('/api/v1/movies', ensureloggedin, require('./routes/api/movies'))
 // Favorites
 
 

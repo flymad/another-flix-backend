@@ -5,7 +5,10 @@ const usersCtrl = require('../../controllers/api/users')
 // POST /api/v1/users
 router.post('/', usersCtrl.create)
 // POST /api/v1/users/login
-// router.post('/login', usersCtrl.login)
+router.post('/login', usersCtrl.login)
+
+//the below routes shoud not be accessed to unauthorized users
+
 // GET /api/v1/users/:id
 router.get('/:id', usersCtrl.show)
 // GET /api/v1/users/:id/favorites
